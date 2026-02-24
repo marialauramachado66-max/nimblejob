@@ -12,9 +12,11 @@ const BASE_URL = 'https://botfilter-h5ddh6dye8exb7ha.centralus-01.azurewebsites.
    }
 
    const data= await response.json();
-   console.log(data);
+   console.log("Respuesta de la API",data);
+   return data;
 }
 catch (error){
     console.error("Problema con la petición:",error);
+    return[];
 }
 }

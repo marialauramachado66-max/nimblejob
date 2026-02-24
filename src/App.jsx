@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { getCandidate } from './functions/getCandidate.js';
 import { getJob } from './functions/getJob';
+import ListadoJobs from './components/ListadoJobs.jsx';
 
 function App() {
  useEffect(()=>{
@@ -16,8 +17,7 @@ function App() {
   return (
     
       <div>
-       
-      <h1>nimble</h1>
+      <ListadoJobs/>
       </div >
        
   );
