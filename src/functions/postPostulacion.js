@@ -5,7 +5,13 @@ export async function postPostulacion({uuid, jobId, candidateId, repoUrl}) {
         const response = await fetch (`${BASE_URL}/api/candidate/apply-to-job`,{
             method: "POST",
             headers:{"Content-Type":"application/json"},
-            body: JSON.stringify(body),
+            body: JSON.stringify({
+        uuid,
+        candidateId,
+        jobId,
+        repoUrl,
+      }),
+
             });
             
             if(!response.ok){
