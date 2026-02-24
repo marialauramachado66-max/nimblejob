@@ -17,7 +17,11 @@ function App() {
   return (
     
       <div>
-      <ListadoJobs/>
+      <ListadoJobs email="marialauramachado66@gmail.com" />
+
+
+
+
       </div >
        
   );
