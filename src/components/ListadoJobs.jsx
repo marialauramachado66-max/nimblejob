@@ -50,6 +50,8 @@ const repoUrl = repoUrls[jobId];
         jobId,
         candidateId: candidate.candidateId,
         repoUrl,
+        applicationId: candidate.applicationId,
+       
 
     });
     console.log("Respuesta del servidor:", result);

@@ -1,7 +1,7 @@
-export async function postPostulacion({uuid, jobId, candidateId, repoUrl}) {
+export async function postPostulacion({uuid, jobId, candidateId, repoUrl, applicationId}) {
     const BASE_URL='https://botfilter-h5ddh6dye8exb7ha.centralus-01.azurewebsites.net'
 
-     const body = { uuid, jobId, candidateId, repoUrl };
+     const body = { uuid, jobId, candidateId, repoUrl, applicationId};
   console.log("Body enviado:", body);
 
     try {
